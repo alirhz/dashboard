@@ -1,0 +1,53 @@
+<div class="flex">
+    <p class="page-text">ویرایش پروفایل</p>
+    <img class="image" src="../../../assets/images/Frame 13243.png">
+    <div class="card">
+        <form [formGroup]="userForm">
+            <div class="edit-form">
+                <div>
+                    <p class="label">تاریخ تولد</p>
+                    <mat-form-field appearance="outline">
+                        <input matInput matInput class="right" [type]="'text'" placeholder="اینجا بنویسید"
+                            formControlName="birthDate" />
+                    </mat-form-field>
+                </div>
+                <div>
+                    <p class="label">نام</p>
+                    <mat-form-field appearance="outline">
+                        <input matInput matInput class="right" placeholder="نام کاربری را وارد کنید"
+                            formControlName="firstName" />
+                    </mat-form-field>
+                </div>
+                <div>
+                    <p class="label">نام خانوادگی</p>
+                    <mat-form-field appearance="outline">
+                        <input matInput matInput class="right" [type]="'text'" placeholder="اینجا بنویسید"
+                            formControlName="lastName" />
+                    </mat-form-field>
+                </div>
+                <div>
+                    <p class="label">جنسیت</p>
+                    <mat-form-field appearance="outline">
+                        <input matInput matInput class="right" [type]="'text'" placeholder="انتخاب کنید"
+                            formControlName="gender" />
+                    </mat-form-field>
+                </div>
+                <div>
+                    <p class="label">کد ملی</p>
+                    <mat-form-field appearance="outline">
+                        <input matInput matInput class="right" [type]="'text'" placeholder="اینجا بنویسید"
+                            formControlName="nationalId" />
+                    </mat-form-field>
+                </div>
+            </div>
+        </form>
+        <div>
+            <button mat-stroked-button>
+                انصراف
+            </button>
+            <button class="save-btn" mat-raised-button color="primary">
+                ذخیره
+            </button>
+        </div>
+    </div>
+</div>

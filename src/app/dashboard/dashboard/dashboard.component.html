@@ -1,0 +1,39 @@
+<div class="container">
+    <!-- <div class="visual-data"> -->
+    <div class="card">
+        <div class="flex-card">
+            <div *ngFor="let data of cardData">
+                <h1>
+                    {{data.counts}}
+                </h1>
+                <p>
+                    {{data.title}}
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="flex-card">
+            <div *ngFor="let data of cardData">
+                <h1>
+                    {{data.counts}}
+                </h1>
+                <p>
+                    {{data.title}}
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions"></highcharts-chart>
+    </div>
+    <div class="card">
+        <app-stack-chart></app-stack-chart>
+    </div>
+
+    <div>
+        <div class="side-nav">
+            <app-side-nav></app-side-nav>
+        </div>
+    </div>
+</div>

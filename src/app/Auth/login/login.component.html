@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="image">
+        <div class="logo">
+            <img src="../../../assets/images/polkadot-new-dot-logo 1.png">
+        </div>
+        <div class="image-text">
+            <img src="../../../assets/images/Frame 106.png">
+        </div>
+    </div>
+    <div class="login-form">
+        <div class="form">
+            <h1>خوش آمدید</h1>
+            <p>ورود به حساب کاربری</p>
+            <form [formGroup]="userForm">
+                <p>نام کاربری</p>
+                <mat-form-field appearance="outline">
+                    <input matInput matInput class="right" placeholder="نام کاربری را وارد کنید"
+                        formControlName="username" />
+                </mat-form-field>
+                <p>رمز عبور</p>
+                <mat-form-field appearance="outline">
+                    <input matInput matInput class="right" [type]="'text'" placeholder="رمز عبور را وارد بکنید"
+                        formControlName="password" />
+                </mat-form-field>
+            </form>
+            <div class="footer-form">
+                <button (click)="Login()" class="button">
+                    <span>ورود </span>
+                </button>
+                <p><a class="font-color">فراموشی رمز عبور</a></p>
+            </div>
+        </div>
+    </div>
+</div>

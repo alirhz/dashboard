@@ -1,0 +1,26 @@
+.side-nav {
+  position: absolute;
+  width: 12%;
+  height: 100%;
+  right: 0px;
+  bottom: 0px;
+  background: #2c2f4c;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  border-radius: 0px;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: flex-end;
+    margin: 20px;
+    padding-top: 20px;
+}
+
+h1 {
+    font-size: larger;
+    cursor: alias;
+}
